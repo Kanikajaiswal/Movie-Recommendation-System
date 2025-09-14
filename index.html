@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Recommendation System</h1>
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <button onclick="searchMovies()">🔍 Search</button>
+    <button onclick="surpriseMe()">🎲 Surprise Me</button>
+    <select id="filterSelect" onchange="filterMovies()">
+      <option value="popular">🔥 Popular</option>
+      <option value="top_rated">⭐ Top Rated</option>
+      <option value="now_playing">🎥 Now Playing</option>
+      <option value="upcoming">🆕 Upcoming</option>
+    </select>
+  </header>
+
+  <h2 id="resultsTitle">Popular Movies</h2>
+  <button id="backBtn" onclick="goBack()" style="display:none;">⬅ Back</button>
+  <div id="movieList" class="movie-list"></div>
+
+  <!-- Movie Details Modal -->
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

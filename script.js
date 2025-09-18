@@ -1,4 +1,4 @@
-const API_KEY = "123e428535a6365ca77ffe5db5383f55";  // <-- Replace with your TMDB API key
+const API_KEY = "123e428535a6365ca77ffe5db5383f55";  
 const BASE_URL = "https://api.themoviedb.org/3";
 let moviesData = [];
 let lastView = { endpoint: "popular", title: "🔥 Popular Movies" };
